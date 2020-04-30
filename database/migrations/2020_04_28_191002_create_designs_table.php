@@ -17,7 +17,7 @@ class CreateDesignsTable extends Migration
             $table->id();
             $table->bigInteger('user_id')->unsigned();
             $table->string('image');
-            $table->string('tile')->nullable();
+            $table->string('title')->nullable();
             $table->text('description')->nullable();
             $table->string('slug')->nullable();
             $table->boolean('is_live')->default(false);
