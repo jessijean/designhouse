@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 //Public Routes
 Route::get('me', 'User\MeController@getMe');
+Route::get('users', 'User\UserController@index');
+Route::get('designs', 'Designs\DesignController@index');
 
 //Routes for Authenticated Users
 
